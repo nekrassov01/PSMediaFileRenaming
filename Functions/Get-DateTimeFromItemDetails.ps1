@@ -17,8 +17,8 @@ function Get-DateTimeFromItemDetails
         [Parameter(Position = 0, Mandatory = $true, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true)]
         [string]$FilePath,
 
-        [Parameter(Position = 1, Mandatory = $true)]
-        [int[]]$DatePropertyId,
+        [Parameter(Position = 1, Mandatory = $false)]
+        [int[]]$DatePropertyId = $PSMediaFileRenamingItemDetailsPropertyId,
 
         [Parameter(Position = 2, Mandatory = $false)]
         [switch]$Inspect

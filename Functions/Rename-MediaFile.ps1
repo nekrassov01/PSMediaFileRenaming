@@ -36,13 +36,13 @@ function Rename-MediaFile
         [int]$IncrementLimit = 999,
 
         [Parameter(Position = 6, Mandatory = $false)]
-        [int[]]$BitMapPropertyId = @(36867, 36868),
+        [int[]]$BitMapPropertyId = $PSMediaFileRenamingBitMapPropertyId,
 
         [Parameter(Position = 7, Mandatory = $false)]
-        [int[]]$ExifPropertyId = 12,
+        [int[]]$ExifPropertyId = $PSMediaFileRenamingItemDetailsPropertyIdExif,
 
         [Parameter(Position = 8, Mandatory = $false)]
-        [int[]]$MediaPropertyId = 208,
+        [int[]]$MediaPropertyId = $PSMediaFileRenamingItemDetailsPropertyIdMedia,
 
         [Parameter(Position = 9, Mandatory = $false)]
         [switch]$Recurse

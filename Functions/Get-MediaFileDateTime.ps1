@@ -19,13 +19,13 @@ function Get-MediaFileDateTime
         [System.IO.FileInfo[]]$Path,
 
         [Parameter(Position = 1, Mandatory = $false)]
-        [int[]]$BitMapPropertyId = @(36867, 36868),
+        [int[]]$BitMapPropertyId = $PSMediaFileRenamingBitMapPropertyId,
 
         [Parameter(Position = 2, Mandatory = $false)]
-        [int[]]$ExifPropertyId = 12,
+        [int[]]$ExifPropertyId = $PSMediaFileRenamingItemDetailsPropertyIdExif,
 
         [Parameter(Position = 3, Mandatory = $false)]
-        [int[]]$MediaPropertyId = 208,
+        [int[]]$MediaPropertyId = $PSMediaFileRenamingItemDetailsPropertyIdMedia,
 
         [Parameter(Position = 4, Mandatory = $false)]
         [switch]$Recurse

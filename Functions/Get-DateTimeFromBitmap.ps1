@@ -18,7 +18,7 @@ function Get-DateTimeFromBitmap
         [string]$FilePath,
 
         [Parameter(Position = 1, Mandatory = $false)]
-        [int[]]$DatePropertyId = @(36867, 36868)
+        [int[]]$DatePropertyId = $PSMediaFileRenamingBitMapPropertyId
     )
 
     begin
